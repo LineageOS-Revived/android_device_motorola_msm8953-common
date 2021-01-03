@@ -25,7 +25,9 @@ $(call inherit-product, vendor/motorola/msm8953-common/msm8953-common-vendor.mk)
 COMMON_PATH := device/motorola/msm8953-common
 
 # Soong namespaces
-PRODUCT_SOONG_NAMESPACES += $(COMMON_PATH)
+PRODUCT_SOONG_NAMESPACES += \
+    $(COMMON_PATH) \
+    hardware/motorola
 
 # Audio
 PRODUCT_PACKAGES += \
