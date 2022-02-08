@@ -35,7 +35,6 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.2-impl_32 \
     android.hardware.soundtrigger@2.2-service \
     audiod \
-    audio.a2dp.default \
     audio.r_submix.default \
     audio.usb.default \
     libaacwrapper \
