@@ -73,12 +73,12 @@ function blob_fixup() {
 
         # memset shim
         vendor/bin/charge_only_mode)
-            "${PATCHELF}" --add-needed libmemset_shim.so "${2}"
+            grep -q "libmemset_shim.so" "${2}" || "${PATCHELF}" --add-needed libmemset_shim.so "${2}"
             ;;
 
         # qsap shim
         vendor/lib64/libmdmcutback.so)
-            "${PATCHELF}" --add-needed libqsap_shim.so "${2}"
+            "grep -q "libqsap_shim.so" "${2}" || ${PATCHELF}" --add-needed libqsap_shim.so "${2}"
             ;;
 
         vendor/lib/libmot_gpu_mapper.so)
@@ -87,7 +87,7 @@ function blob_fixup() {
 
         # Fix missing symbols
         vendor/lib64/libril-qc-hal-qmi.so)
-            "${PATCHELF}" --add-needed "libcutils_shim.so" "${2}"
+            "grep -q "libcutils_shim.so" "${2}" || ${PATCHELF}" --add-needed "libcutils_shim.so" "${2}"
             ;;
 
         # Fix camera recording
