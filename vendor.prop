@@ -41,6 +41,9 @@ dalvik.vm.dex2oat64.enabled=true
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 
+# OEM Unlock
+ro.oem_unlock_supported=1
+
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
