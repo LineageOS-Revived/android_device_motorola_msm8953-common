@@ -67,8 +67,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     android.hardware.camera.provider@2.4-impl \
     camera.device@3.2-impl \
-    libwui \
-    Snap
+    libwui
 
 # Codec2 modules
 PRODUCT_PACKAGES += \
