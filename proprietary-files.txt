@@ -44,8 +44,8 @@ vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 
 # Bluetooth-AptX - from deen_sprout
-lib64/libaptXHD_encoder.so
-lib64/libaptX_encoder.so
+system/lib64/libaptXHD_encoder.so
+system/lib64/libaptX_encoder.so
 
 # CNE - from deen_sprout
 product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml
@@ -120,7 +120,7 @@ vendor/lib/libmot_gpu_mapper.so
 vendor/bin/hvdcp_opti
 
 # DPM - from deen_sprout
-framework/tcmclient.jar
+system/framework/tcmclient.jar
 product/lib64/libdpmctmgr.so
 product/lib64/libdpmfdmgr.so
 product/lib64/libdpmtcm.so
@@ -167,9 +167,9 @@ vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libssd.so
 
 # FM - from deen_sprout
-lib/libfm-hci.so
-lib64/fm_helium.so
-lib64/libfm-hci.so
+system/lib/libfm-hci.so
+system/lib64/fm_helium.so
+system/lib64/libfm-hci.so
 -product/lib/vendor.qti.hardware.fm@1.0.so
 -product/lib64/vendor.qti.hardware.fm@1.0.so
 vendor/bin/fm_qsoc_patches
@@ -224,8 +224,8 @@ vendor/lib64/librs_adreno.so|3d0a23777e7bdd979a0c84d9da731ae15d58af68
 vendor/lib64/librs_adreno_sha1.so|152cdd391b9b2d369ee132529b725d3141ee9b8e
 
 # Graphics (Postprocessing) - from river:10/QPUS30.52-33-11
-etc/permissions/com.qti.snapdragon.sdk.display.xml|0bff16d681e75f203c1e11ff33afba82490e49b3
-framework/com.qti.snapdragon.sdk.display.jar|495d45dd84a61e873a3d1176ab7741826e60d7f1
+system/etc/permissions/com.qti.snapdragon.sdk.display.xml|0bff16d681e75f203c1e11ff33afba82490e49b3
+system/framework/com.qti.snapdragon.sdk.display.jar|495d45dd84a61e873a3d1176ab7741826e60d7f1
 vendor/bin/hw/vendor.display.color@1.0-service|e8c561e3a169c3007b117515f2946f23a195a5e5
 vendor/bin/mm-pp-dpps|0fedd7aa1ddeabea4d2ab9642bbd03001dc92118
 vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
@@ -288,14 +288,14 @@ vendor/firmware/a630_gmu.bin
 vendor/firmware/a630_sqe.fw
 
 # GPS - from deen_sprout
-etc/permissions/com.qti.location.sdk.xml
-etc/permissions/com.qualcomm.location.xml
-etc/permissions/izat.xt.srv.xml
-etc/permissions/privapp-permissions-com.qualcomm.location.xml
--framework/com.qti.location.sdk.jar
--framework/izat.xt.srv.jar
-lib64/liblocationservice_jni.so
-lib64/libxt_native.so
+system/etc/permissions/com.qti.location.sdk.xml
+system/etc/permissions/com.qualcomm.location.xml
+system/etc/permissions/izat.xt.srv.xml
+system/etc/permissions/privapp-permissions-com.qualcomm.location.xml
+-system/framework/com.qti.location.sdk.jar
+-system/framework/izat.xt.srv.jar
+system/lib64/liblocationservice_jni.so
+system/lib64/libxt_native.so
 product/lib/vendor.qti.gnss@1.0.so
 product/lib/vendor.qti.gnss@1.1.so
 product/lib/vendor.qti.gnss@1.2.so
@@ -423,10 +423,10 @@ vendor/lib64/libOmxQcelp13Dec.so
 vendor/lib64/libOmxWmaDec.so
 
 # Perf - from deen_sprout
-lib/libqti_performance.so
-lib/libqti-perfd-client_system.so
-lib64/libqti_performance.so
-lib64/libqti-perfd-client_system.so
+system/lib/libqti_performance.so
+system/lib/libqti-perfd-client_system.so
+system/lib64/libqti_performance.so
+system/lib64/libqti-perfd-client_system.so
 vendor/bin/energy-awareness
 vendor/bin/hw/vendor.qti.hardware.perf@2.0-service
 vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc
@@ -444,10 +444,10 @@ vendor/lib64/libqti-util.so
 vendor/lib64/libqti-utils.so
 
 # Perf - IOP - from deen_sprout
-lib/libqti-iopd-client_system.so
-lib/libqti-util_system.so
-lib64/libqti-iopd-client_system.so
-lib64/libqti-util_system.so
+system/lib/libqti-iopd-client_system.so
+system/lib/libqti-util_system.so
+system/lib64/libqti-iopd-client_system.so
+system/lib64/libqti-util_system.so
 product/lib/vendor.qti.hardware.iop@1.0.so
 product/lib/vendor.qti.hardware.iop@2.0.so
 product/lib64/vendor.qti.hardware.iop@1.0.so
