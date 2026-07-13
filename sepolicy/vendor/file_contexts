@@ -98,3 +98,6 @@
 
 # DTV
 /dev/isdbt                                               u:object_r:isdbt_device:s0
+
+# Touch
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.msm8953 u:object_r:hal_lineage_touch_default_exec:s0
