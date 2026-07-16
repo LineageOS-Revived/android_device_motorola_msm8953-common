@@ -35,8 +35,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.service_32 \
     android.hardware.audio.effect@6.0-impl_32 \
     android.hardware.soundtrigger@2.2-impl_32 \
-    android.hardware.soundtrigger@2.2-service \
-    audiod \
     audio.r_submix.default \
     audio.usb.default \
     libaacwrapper \
@@ -59,7 +57,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0 \
     audio.bluetooth.default \
     android.hardware.bluetooth.audio@2.0-impl \
-    libbt-vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor
 
 # Camera
@@ -81,12 +78,10 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl-2.1 \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-    copybit.msm8953 \
     gralloc.msm8953 \
     hwcomposer.msm8953 \
     memtrack.msm8953 \
     libdisplayconfig \
-    libgenlock \
     libqdMetaData.system \
     libvulkan \
     libtinyxml
@@ -140,7 +135,6 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.base@1.0_system \
     android.hidl.manager@1.0 \
-    android.hidl.manager@1.0-java \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
@@ -370,28 +364,22 @@ PRODUCT_PACKAGES += \
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
-    android.hardware.thermal@1.0-service \
-    thermal.msm8953
+    android.hardware.thermal@1.0-service
 
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
-    dhcpcd.conf \
     hostapd \
     hostapd_cli \
-    libnl_2 \
     libnl \
     libqsap_sdk \
-    libQWiFiSoftApCfg \
     libwifi-hal-qcom \
     libwpa_client \
     wcnss_service \
     wificond \
-    wifilogd \
     WifiOverlay \
     wpa_supplicant \
-    wpa_supplicant.conf \
-    wpa_supplicant_wcn.conf
+    wpa_supplicant.conf
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
