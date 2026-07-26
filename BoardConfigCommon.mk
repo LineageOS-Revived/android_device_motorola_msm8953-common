@@ -164,7 +164,6 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
 VENDOR_SECURITY_PATCH := 2020-10-01
 
 # Treble
-PRODUCT_FULL_TREBLE_OVERRIDE := true
 BOARD_VNDK_VERSION := current
 
 # Peripheral manager
@@ -177,6 +176,13 @@ TARGET_USES_INTERACTION_BOOST := true
 TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
 TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
+
+# Recovery
+ifeq ($(PRODUCT_FULL_TREBLE_OVERRIDE), true)
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab_legacy.qcom
+else
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
+endif
 
 # RIL
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
