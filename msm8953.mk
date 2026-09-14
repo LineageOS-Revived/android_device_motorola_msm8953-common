@@ -161,7 +161,6 @@ PRODUCT_PACKAGES += \
     init.class_main.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
-    init.qcom.sensors.sh \
     init.qcom.sh \
     init.qti.qseecomd.sh \
     init.hidl.sensor.rc \
@@ -173,6 +172,12 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     init.target.rc \
     ueventd.qcom.rc
+
+# Sensors
+ifndef BOARD_USES_MOT_SENSOR_HUB
+PRODUCT_PACKAGES += \
+    init.qcom.sensors.sh
+endif
 
 # IPACM
 PRODUCT_PACKAGES += \
